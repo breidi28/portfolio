@@ -34,11 +34,14 @@ export function About() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Strengths</h3>
-                  <p className="text-muted-foreground">
-                    Applied analytics mindset with proven business impact • End-to-end technical skills • 
-                    Strong stakeholder communication • Rapid self-learner • Experience delivering results 
-                    in Scrum and Agile environments
-                  </p>
+                  <ul>
+                    <li className="text-muted-foreground">• Strong analytical and problem-solving skills</li>
+                    <li className="text-muted-foreground">• Proficient in Python, R, SQL, and BI tools</li>
+                    <li className="text-muted-foreground">• Experience with data visualization and dashboarding</li>
+                    <li className="text-muted-foreground">• Excellent communication and stakeholder management</li>
+                    <li className="text-muted-foreground">• Rapid self-learner and adaptable to new technologies</li>
+                    <li className="text-muted-foreground">• Experience delivering results in Scrum and Agile environments</li>
+                  </ul>
                 </div>
               </div>
             </div>
