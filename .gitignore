@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# python virtual environment
+.venv/
+*.pyc
+__pycache__/
+
+# CV file (optional - remove this line if you want to include it)
+CV_Vlad_Bradiceanu.pdf
