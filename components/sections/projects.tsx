@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Github } from "lucide-react";
 
 export function Projects() {
   const projects = [
@@ -83,7 +84,8 @@ export function Projects() {
                   </Button>
                   <Button variant="outline" size="sm" className="flex-1" asChild>
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      GitHub
+                      <Github className="mr-2 h-4 w-4" />
+                      {project.githubText || "GitHub"}
                     </a>
                   </Button>
                 </div>
