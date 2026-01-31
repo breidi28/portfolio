@@ -14,7 +14,8 @@ export function Projects() {
       title: "Jugo - User Engagement Analysis",
       description: "Large-scale website analytics project evaluating platform redesign impact. Built interactive dashboards using Dash & Plotly to visualize traffic trends and conversion behavior.",
       technologies: ["Python", "Pandas", "NumPy", "Dash", "Plotly"],
-      link: "https://jugo.nl/"
+      link: "https://jugo.nl/",
+      linkText: "Go to Site"
     },
     {
       title: "Movie Recommendation System",
@@ -27,13 +28,15 @@ export function Projects() {
       title: "Plainwater - BI & UX Optimization",
       description: "Customer behavior analysis and digital optimization for e-commerce. Created Power BI dashboards and Figma prototypes to improve conversion and retention.",
       technologies: ["Python", "Pandas", "Power BI", "Figma", "UX Research"],
-      link: "https://plainwater.nl/"
+      link: "https://plainwater.nl/",
+      linkText: "Go to Site"
     },
     {
       title: "BRD Bank - Financial Dashboards",
       description: "Designed interactive financial KPI dashboards using Plotly Dash. Performed data preprocessing and created executive-level reports for management decision-making.",
       technologies: ["Python", "Plotly", "Dash", "Pandas"],
-      link: "https://www.brd.ro/"
+      link: "https://www.brd.ro/",
+      linkText: "Go to Site"
     },
     {
       title: "ESP32 Weather Station",
@@ -66,7 +69,7 @@ export function Projects() {
                 <div className="flex gap-2">
                   <Button variant="default" size="sm" className="flex-1" asChild>
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
-                      Live Demo
+                      {project.linkText || "Live Demo"}
                     </a>
                   </Button>
                   <Button variant="outline" size="sm" className="flex-1" asChild>
