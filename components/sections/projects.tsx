@@ -8,7 +8,8 @@ export function Projects() {
       title: "DAF Trucks NV - Process Optimization",
       description: "Real-world industrial optimization project delivering 50% downtime reduction. Analyzed production data, created interactive dashboards, and presented solutions to stakeholders.",
       technologies: ["Python", "Pandas", "R", "Tableau", "Power Apps", "Figma"],
-      link: "https://www.daf.nl/"
+      link: "https://www.daf.nl/",
+      linkText: "Go to Site"
     },
     {
       title: "Jugo - User Engagement Analysis",
