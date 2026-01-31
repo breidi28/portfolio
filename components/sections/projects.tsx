@@ -9,14 +9,18 @@ export function Projects() {
       description: "Real-world industrial optimization project delivering 50% downtime reduction. Analyzed production data, created interactive dashboards, and presented solutions to stakeholders.",
       technologies: ["Python", "Pandas", "R", "Tableau", "Power Apps", "Figma"],
       link: "https://www.daf.nl/",
-      linkText: "Go to Site"
+      linkText: "Go to Site",
+      github: "#",
+      githubText: "Coming Soon"
     },
     {
       title: "Jugo - User Engagement Analysis",
       description: "Large-scale website analytics project evaluating platform redesign impact. Built interactive dashboards using Dash & Plotly to visualize traffic trends and conversion behavior.",
       technologies: ["Python", "Pandas", "NumPy", "Dash", "Plotly"],
       link: "https://jugo.nl/",
-      linkText: "Go to Site"
+      linkText: "Go to Site",
+      github: "#",
+      githubText: "Coming Soon"
     },
     {
       title: "Movie Recommendation System",
@@ -30,14 +34,18 @@ export function Projects() {
       description: "Customer behavior analysis and digital optimization for e-commerce. Created Power BI dashboards and Figma prototypes to improve conversion and retention.",
       technologies: ["Python", "Pandas", "Power BI", "Figma", "UX Research"],
       link: "https://plainwater.nl/",
-      linkText: "Go to Site"
+      linkText: "Go to Site",
+      github: "#",
+      githubText: "Coming Soon"
     },
     {
       title: "BRD Bank - Financial Dashboards",
       description: "Designed interactive financial KPI dashboards using Plotly Dash. Performed data preprocessing and created executive-level reports for management decision-making.",
       technologies: ["Python", "Plotly", "Dash", "Pandas"],
       link: "https://www.brd.ro/",
-      linkText: "Go to Site"
+      linkText: "Go to Site",
+      github: "#",
+      githubText: "Coming Soon"
     },
     {
       title: "ESP32 Weather Station",
