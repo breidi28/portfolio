@@ -54,6 +54,7 @@ export function Projects() {
       technologies: ["ESP32", "Arduino", "IoT", "Web UI", "Flask"],
       link: "#",
       github: "#",
+      githubText: "Coming Soon"
     },
   ];
 
