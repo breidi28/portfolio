@@ -5,23 +5,23 @@ export function Skills() {
   const skillCategories = [
     {
       title: "Data & Analytics",
-      skills: ["Python", "Pandas", "SQL", "Machine Learning", "R", "NumPy"],
+      skills: ["Python", "Pandas", "SQL", "Machine Learning", "R", "NumPy" ],
     },
     {
       title: "BI & Visualization",
-      skills: ["Power BI", "Plotly", "Dash", "Matplotlib", "Tableau"],
+      skills: ["Power BI", "Plotly", "Dash", "Matplotlib", "Tableau", "Google Looker Studio" ],
     },
     {
       title: "Web Development",
-      skills: ["React", "JavaScript", "HTML", "Flask", "FastAPI", "Next.js"],
+      skills: ["React", "JavaScript", "HTML", "Flask", "FastAPI", "Next.js", "Flutter" ],
     },
     {
       title: "Tools & Platforms",
-      skills: ["Figma", "Git", "Scrum", "Agile", "Apache Airflow", "Apache Superset", "Windows/Linux" ],
+      skills: ["Figma", "Git", "Scrum", "Agile", "Apache Airflow", "Apache Superset", "Windows/Linux"],
     },
     {
       title: "IoT & Hardware",
-      skills: ["ESP32", "Arduino", "Device Diagnostics", "Hardware Repair"],
+      skills: ["ESP32", "Arduino", "Device Diagnostics", "Hardware Repair", "Embedded Systems"],
     },
     {
       title: "Certifications",
