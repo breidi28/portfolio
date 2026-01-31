@@ -8,36 +8,32 @@ export function Projects() {
       title: "DAF Trucks NV - Process Optimization",
       description: "Real-world industrial optimization project delivering 50% downtime reduction. Analyzed production data, created interactive dashboards, and presented solutions to stakeholders.",
       technologies: ["Python", "Pandas", "R", "Tableau", "Power Apps", "Figma"],
-      link: "https://www.daf.nl/",
-      github: "#",
+      link: "https://www.daf.nl/"
     },
     {
       title: "Jugo - User Engagement Analysis",
       description: "Large-scale website analytics project evaluating platform redesign impact. Built interactive dashboards using Dash & Plotly to visualize traffic trends and conversion behavior.",
       technologies: ["Python", "Pandas", "NumPy", "Dash", "Plotly"],
-      link: "https://jugo.nl/",
-      github: "#",
+      link: "https://jugo.nl/"
     },
     {
       title: "Movie Recommendation System",
       description: "Content-based filtering engine using NLP and machine learning. Implemented cosine similarity with k-NN to generate personalized movie recommendations from TMDB dataset.",
       technologies: ["Python", "Machine Learning", "NLP", "Scikit-learn"],
       link: "#",
-      github: "#",
+      github: "https://github.com/breidi28/Movie-Recommendation-System",
     },
     {
       title: "Plainwater - BI & UX Optimization",
       description: "Customer behavior analysis and digital optimization for e-commerce. Created Power BI dashboards and Figma prototypes to improve conversion and retention.",
       technologies: ["Python", "Pandas", "Power BI", "Figma", "UX Research"],
-      link: "https://plainwater.nl/",
-      github: "#",
+      link: "https://plainwater.nl/"
     },
     {
       title: "BRD Bank - Financial Dashboards",
       description: "Designed interactive financial KPI dashboards using Plotly Dash. Performed data preprocessing and created executive-level reports for management decision-making.",
       technologies: ["Python", "Plotly", "Dash", "Pandas"],
-      link: "https://www.brd.ro/",
-      github: "#",
+      link: "https://www.brd.ro/"
     },
     {
       title: "ESP32 Weather Station",
