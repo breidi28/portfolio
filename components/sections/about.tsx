@@ -15,8 +15,8 @@ export function About() {
                 with high digital literacy and hands-on technical aptitude across software, hardware, and IT systems.
               </p>
               <p className="text-lg text-muted-foreground">
-                Experienced in process optimization and digital transformation, including delivering a <strong>50% efficiency 
-                improvement</strong> for a major industrial client (DAF Trucks). A rapid self-learner and clear communicator 
+                My recent interest in AI solutions and cross-platform development has led me to explore modern frameworks and tools to build impactful applications.
+                I am a rapid self-learner and clear communicator 
                 ready to tackle complex challenges in dynamic environments.
               </p>
               <Separator />
@@ -37,6 +37,7 @@ export function About() {
                   <ul>
                     <li className="text-muted-foreground">• Strong analytical and problem-solving skills</li>
                     <li className="text-muted-foreground">• Proficient in Python, R, SQL, and BI tools</li>
+                    <li className="text-muted-foreground">• Strong foundation in software development and system design</li>
                     <li className="text-muted-foreground">• Experience with data visualization and dashboarding</li>
                     <li className="text-muted-foreground">• Excellent communication and stakeholder management</li>
                     <li className="text-muted-foreground">• Rapid self-learner and adaptable to new technologies</li>
