@@ -98,6 +98,18 @@ export function Contact() {
                 </a>
               </div>
             </div>
+            <div className="flex items-center gap-3">
+              <svg
+                className="w-5 h-5 text-muted-foreground"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-5.514 0-10-4.486-10-10s4.486-10 10-10 10 4.486 10 10-4.486 10-10 10zm1-17h-2v6h2v-6zm0 8h-2v2h2v-2z"/>
+              </svg>
+              <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                My CV
+              </a>
+            </div>
             <div className="pt-4">
               <Button className="w-full" size="lg" asChild>
                 <a href="mailto:vladbradiceanuandrei@gmail.com">Send Me an Email</a>
