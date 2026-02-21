@@ -72,6 +72,14 @@ export function Projects() {
       link: "#",
       linkText: "Live Demo on Github",
       github: "https://github.com/breidi28/React-Music-Player"
+    },
+    {
+      title: "Business Manager Dashboard",
+      description: "Developed cross-platform business management app for managing clients, projects, and invoices. Designed comprehensive financial dashboard with income overview, revenue analytics, and visual data representation. Created dynamic invoice generation system using react-native-html-to-pdf to convert client and project data into professional PDF invoices.",
+      technologies: ["React Native", "TypeScript", "React Native HTML to PDF", "AsyncStorage", "React Hook Form"],
+      link: "#",
+      linkText: "Live Demo Coming Soon",
+      github: "https://github.com/breidi28/business-management"
     }
   ];
 
