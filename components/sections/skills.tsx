@@ -12,16 +12,16 @@ export function Skills() {
       skills: ["Power BI", "Plotly", "Dash", "Matplotlib", "Tableau", "Google Looker Studio" ],
     },
     {
-      title: "Web Development",
-      skills: ["React", "JavaScript", "HTML", "Flask", "FastAPI", "Next.js", "Flutter" ],
+      title: "Web & Mobile Development",
+      skills: ["React", "JavaScript", "HTML", "Flask", "React Native", "TypeScript", "Node.js"],
     },
     {
       title: "Tools & Platforms",
       skills: ["Figma", "Git", "Scrum", "Agile", "Apache Airflow", "Apache Superset", "Windows/Linux"],
     },
     {
-      title: "IoT & Hardware",
-      skills: ["ESP32", "Arduino", "Device Diagnostics", "Hardware Repair", "Embedded Systems"],
+      title: "AI & Machine Learning",
+      skills: ["Modelling", "NLP", "Scikit-learn", "Feature Engineering", "Model Evaluation", "Data Preprocessing"],
     },
     {
       title: "Certifications",

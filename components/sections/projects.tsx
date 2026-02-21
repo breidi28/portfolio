@@ -57,6 +57,22 @@ export function Projects() {
       linkText: "Live Demo Coming Soon",
       github: "https://github.com/breidi28/train-tracker",
     },
+    {
+      title: "Microservices Weather Dashboard",
+      description: "Cloud-native web application using Python, React, and SQLite with a microservices architecture using Docker and Kubernetes. Deployed machine learning models to Azure and integrated API calls for real-time weather predictions. Established monitoring using Prometheus and Grafana for performance tracking.",
+      technologies: ["Python", "React", "SQLite", "Docker", "Kubernetes", "Azure", "Prometheus", "Grafana"],
+      link: "#",
+      linkText: "Live Demo Coming Soon",
+      github: "https://github.com/breidi28/-microservices-weather-dashboard",
+    },
+    {
+      title: "Audiophile Music Player",
+      description: "Architected and developed a desktop music player using React and TypeScript with a modern UI/UX design. Integrated Web Audio API for high-quality audio playback and implemented features like playlist management, equalizer settings, and offline support. Deployed the application using Electron for cross-platform compatibility.",
+      technologies: ["React", "TypeScript", "Web Audio API", "Electron", "Vite"],
+      link: "#",
+      linkText: "Live Demo on Github",
+      github: "https://github.com/breidi28/React-Music-Player"
+    }
   ];
 
   return (
