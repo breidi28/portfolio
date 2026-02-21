@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
+import { link } from "fs";
 
 export function Projects() {
   const projects = [
@@ -49,12 +50,12 @@ export function Projects() {
       githubText: "Coming Soon"
     },
     {
-      title: "ESP32 Weather Station",
-      description: "IoT system displaying real-time weather data on OLED screens with remote web UI configuration. Hands-on embedded systems and hardware project.",
-      technologies: ["ESP32", "Arduino", "IoT", "Web UI", "Flask"],
+      title: "Train Tracker for Romanian Railways",
+      description: "Real-time train tracking application using public APIs. Built with React Native and Node.js to display live train locations, schedules, and delays for Romanian Railways.",
+      technologies: ["React Native", "Node.js", "Python Flask", "Public APIs"],
       link: "#",
-      github: "#",
-      githubText: "Coming Soon"
+      linkText: "Live demo coming soon",
+      github: "https://github.com/breidi28/train-tracker",
     },
   ];
 
