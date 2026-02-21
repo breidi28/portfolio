@@ -99,13 +99,7 @@ export function Contact() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <svg
-                className="w-5 h-5 text-muted-foreground"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-5.514 0-10-4.486-10-10s4.486-10 10-10 10 4.486 10 10-4.486 10-10 10zm1-17h-2v6h2v-6zm0 8h-2v2h2v-2z"/>
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="24" height="24" fill="#000000" style="opacity:1;"><path  d="M6.4 2A2.4 2.4 0 0 0 4 4.4v19.2A2.4 2.4 0 0 0 6.4 26h15.2a2.4 2.4 0 0 0 2.4-2.4V11.578c0-.729-.29-1.428-.805-1.944l-6.931-6.931A2.4 2.4 0 0 0 14.567 2zm-.9 2.4a.9.9 0 0 1 .9-.9H14V10a2 2 0 0 0 2 2h6.5v11.6a.9.9 0 0 1-.9.9H6.4a.9.9 0 0 1-.9-.9zm16.44 6.1H16a.5.5 0 0 1-.5-.5V4.06z"/></svg>
               <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                 My CV
               </a>
