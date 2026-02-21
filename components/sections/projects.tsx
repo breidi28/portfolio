@@ -54,7 +54,7 @@ export function Projects() {
       description: "Real-time train tracking application using public APIs. Built with React Native and Node.js to display live train locations, schedules, and delays for Romanian Railways.",
       technologies: ["React Native", "Node.js", "Python Flask", "Public APIs"],
       link: "#",
-      linkText: "Live demo coming soon",
+      linkText: "Live Demo Coming Soon",
       github: "https://github.com/breidi28/train-tracker",
     },
   ];
