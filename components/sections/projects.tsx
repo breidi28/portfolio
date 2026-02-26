@@ -8,7 +8,7 @@ export function Projects() {
   const projects = [
     {
       title: "Train Tracker for Romanian Railways",
-      description: "Real-time train tracking application using public APIs. Built with React Native and Node.js to display live train locations, schedules, and delays for Romanian Railways.",
+      description: "Beautiful overhaul of the CFR website in a mobile-first approach, with a modern UI/UX design and a focus on user experience. The app is built with React Native and Node.js to display live train locations, schedules, delays and other information for Romanian Railways. It is a personal project that I built to solve a problem I faced as a frequent train traveler.",
       technologies: ["React Native", "Node.js", "Python Flask", "Public APIs"],
       link: "https://mytrainbreidi.vercel.app/",
       linkText: "Train Tracker Live",
