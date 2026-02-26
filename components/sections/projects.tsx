@@ -7,6 +7,14 @@ import { link } from "fs";
 export function Projects() {
   const projects = [
     {
+      title: "Train Tracker for Romanian Railways",
+      description: "Real-time train tracking application using public APIs. Built with React Native and Node.js to display live train locations, schedules, and delays for Romanian Railways.",
+      technologies: ["React Native", "Node.js", "Python Flask", "Public APIs"],
+      link: "https://mytrainbreidi.vercel.app/",
+      linkText: "Train Tracker Live",
+      github: "https://github.com/breidi28/train-tracker",
+    },
+    {
       title: "DAF Trucks NV - Process Optimization",
       description: "Real-world industrial optimization project delivering 50% downtime reduction. Analyzed production data, created interactive dashboards, and presented solutions to stakeholders.",
       technologies: ["Python", "Pandas", "R", "Tableau", "Power Apps", "Figma"],
@@ -48,14 +56,6 @@ export function Projects() {
       linkText: "Go to Site",
       github: "#",
       githubText: "Coming Soon"
-    },
-    {
-      title: "Train Tracker for Romanian Railways",
-      description: "Real-time train tracking application using public APIs. Built with React Native and Node.js to display live train locations, schedules, and delays for Romanian Railways.",
-      technologies: ["React Native", "Node.js", "Python Flask", "Public APIs"],
-      link: "https://mytrainbreidi.vercel.app/",
-      linkText: "Train Tracker Live",
-      github: "https://github.com/breidi28/train-tracker",
     },
     {
       title: "Microservices Weather Dashboard",
