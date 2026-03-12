@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vlad Andrei Bradiceanu | Data & Business Analyst",
-  description: "Applied Data & Business Analyst specializing in ML, BI, Dashboard development, and IT solutions. Proven track record in process optimization and digital transformation.",
+  title: "Vlad Andrei Bradiceanu | Data Analyst & Full-Stack Developer",
+  description: "Data Analyst & Full-Stack Developer with proven track record in analytics and software development. 50% downtime reduction at DAF Trucks. Building production apps serving thousands of users. Expertise in Python, React Native, BI, and Machine Learning.",
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

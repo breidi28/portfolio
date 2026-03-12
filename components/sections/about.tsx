@@ -6,7 +6,7 @@ export function About() {
     <section id="about" className="py-20">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-8 text-center">About Me</h2>
-        <Card>
+        <Card className="border-2 hover:border-primary/30 transition-all duration-300 hover:shadow-xl">
           <CardContent className="pt-6">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground">

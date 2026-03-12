@@ -34,15 +34,22 @@ export function Skills() {
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-8 text-center">Skills & Technologies</h2>
         <div className="grid md:grid-cols-3 gap-6">
-          {skillCategories.map((category) => (
-            <Card key={category.title}>
+          {skillCategories.map((category, index) => (
+            <Card 
+              key={category.title} 
+              className="hover:shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer border-2 hover:border-primary/30"
+              style={{ animationDelay: `${index * 50}ms` }}
+            >
               <CardHeader>
-                <CardTitle>{category.title}</CardTitle>
+                <CardTitle className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-primary"></span>
+                  {category.title}
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
-                    <Badge key={skill} variant="secondary">
+                    <Badge key={skill} variant="secondary" className="hover:bg-primary hover:text-primary-foreground transition-colors">
                       {skill}
                     </Badge>
                   ))}

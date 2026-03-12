@@ -5,7 +5,38 @@ import { Github } from "lucide-react";
 import { link } from "fs";
 
 export function Projects() {
-  const projects = [
+  const featuredProjects = [
+    {
+      title: "Train Tracker for Romanian Railways",
+      description: "Production-ready mobile app serving 1,000+ active users. Complete redesign of CFR's outdated system with real-time train tracking, delay notifications, and multi-language support. Built with React Native for cross-platform deployment. Solved a real problem I faced as a frequent traveler—now helping thousands of commuters daily.",
+      technologies: ["React Native", "Node.js", "Python Flask", "Public APIs", "i18n"],
+      link: "https://mytrainbreidi.vercel.app/",
+      linkText: "View Live App",
+      github: "https://github.com/breidi28/train-tracker",
+      featured: true,
+    },
+    {
+      title: "DAF Trucks NV - Process Optimization",
+      description: "Industrial analytics project that delivered measurable impact: 50% reduction in production downtime, saving €100K+ annually. Analyzed 6 months of manufacturing data, identified bottlenecks, and built Tableau dashboards for real-time monitoring. Presented data-driven recommendations to C-level stakeholders. This project demonstrates my ability to drive business value through analytics.",
+      technologies: ["Python", "Pandas", "R", "Tableau", "Power Apps", "Figma"],
+      link: "https://www.daf.nl/",
+      linkText: "Company Site",
+      github: "#",
+      githubText: "NDA Protected",
+      featured: true,
+    },
+    {
+      title: "Microservices Weather Dashboard",
+      description: "Enterprise-grade weather forecasting app with microservices architecture. Containerized Python/React services with Docker, orchestrated via Kubernetes, and deployed to Azure. ML weather prediction models with 92% accuracy. Implemented full DevOps pipeline: monitoring (Prometheus/Grafana), logging, and auto-scaling. Showcases modern cloud architecture and engineering best practices.",
+      technologies: ["Python", "React", "SQLite", "Docker", "Kubernetes", "Azure", "Prometheus", "Grafana"],
+      link: "https://github.com/breidi28/-microservices-weather-dashboard",
+      linkText: "View Architecture",
+      github: "https://github.com/breidi28/-microservices-weather-dashboard",
+      featured: true,
+    },
+  ];
+
+  const otherProjects = [
     {
       title: "Train Tracker for Romanian Railways",
       description: "Production-ready mobile app serving 1,000+ active users. Complete redesign of CFR's outdated system with real-time train tracking, delay notifications, and multi-language support. Built with React Native for cross-platform deployment. Solved a real problem I faced as a frequent traveler—now helping thousands of commuters daily.",
@@ -87,38 +118,95 @@ export function Projects() {
   return (
     <section id="projects" className="py-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-8 text-center">Featured Projects</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => (
-            <Card key={project.title} className="flex flex-col">
-              <CardHeader>
-                <CardTitle>{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
-              </CardHeader>
-              <CardContent className="flex-1 flex flex-col justify-between">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="outline">
-                      {tech}
-                    </Badge>
-                  ))}
+        {/* Featured Projects */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold mb-3">Featured Projects</h2>
+            <p className="text-muted-foreground">Highlights of my most impactful work</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {featuredProjects.map((project, index) => (
+              <Card 
+                key={project.title} 
+                className="flex flex-col group hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 hover:border-primary/50 cursor-pointer"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="absolute -top-3 -right-3 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                  Featured
                 </div>
-                <div className="flex gap-2">
-                  <Button variant="default" size="sm" className="flex-1" asChild>
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">
-                      {project.linkText || "Live Demo"}
-                    </a>
-                  </Button>
-                  <Button variant="outline" size="sm" className="flex-1" asChild>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" />
-                      {project.githubText || "GitHub"}
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                <CardHeader>
+                  <CardTitle className="group-hover:text-primary transition-colors">{project.title}</CardTitle>
+                  <CardDescription>{project.description}</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-1 flex flex-col justify-between">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.map((tech) => (
+                      <Badge key={tech} variant="outline" className="group-hover:border-primary/50 transition-colors">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                  <div className="flex gap-2">
+                    <Button variant="default" size="sm" className="flex-1" asChild>
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        {project.linkText || "Live Demo"}
+                      </a>
+                    </Button>
+                    <Button variant="outline" size="sm" className="flex-1" asChild>
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="mr-2 h-4 w-4" />
+                        {project.githubText || "GitHub"}
+                      </a>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Other Projects */}
+        <div>
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-bold mb-3">More Projects</h3>
+            <p className="text-muted-foreground">Additional work demonstrating diverse technical capabilities</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {otherProjects.map((project, index) => (
+              <Card 
+                key={project.title} 
+                className="flex flex-col group hover:shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <CardHeader>
+                  <CardTitle className="group-hover:text-primary transition-colors">{project.title}</CardTitle>
+                  <CardDescription>{project.description}</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-1 flex flex-col justify-between">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.map((tech) => (
+                      <Badge key={tech} variant="outline">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                  <div className="flex gap-2">
+                    <Button variant="default" size="sm" className="flex-1" asChild>
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        {project.linkText || "Live Demo"}
+                      </a>
+                    </Button>
+                    <Button variant="outline" size="sm" className="flex-1" asChild>
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="mr-2 h-4 w-4" />
+                        {project.githubText || "GitHub"}
+                      </a>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>

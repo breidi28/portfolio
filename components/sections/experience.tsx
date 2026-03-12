@@ -48,7 +48,7 @@ export function Experience() {
         <h2 className="text-4xl font-bold mb-8 text-center">Work Experience</h2>
         <div className="space-y-6">
           {experiences.map((exp, index) => (
-            <Card key={index}>
+            <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:scale-[1.01] border-l-4 border-l-primary/50 hover:border-l-primary">
               <CardHeader>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2">
                   <div>

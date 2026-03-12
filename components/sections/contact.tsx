@@ -8,12 +8,32 @@ export function Contact() {
         <h2 className="text-4xl font-bold mb-8 text-center">Get In Touch</h2>
         <Card>
           <CardHeader>
-            <CardTitle>Let&apos;s Work Together</CardTitle>
-            <CardDescription>
-              I&apos;m always open to discussing new projects, creative ideas, or opportunities.
+            <CardTitle className="text-2xl">Let&apos;s Work Together</CardTitle>
+            <CardDescription className="text-base">
+              I&apos;m actively seeking Data Analyst, Business Intelligence, or Full-Stack Developer opportunities. 
+              Open to discussing exciting projects and career opportunities.
             </CardDescription>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="space-y-6">
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-3 pb-4 border-b">
+              <Button size="lg" className="flex-1" asChild>
+                <a href="mailto:vladbradiceanuandrei@gmail.com">
+                  <svg className="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  Email Me
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" className="flex-1" asChild>
+                <a href="#" download>
+                  <svg className="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  Download Resume
+                </a>
+              </Button>
+            </div>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <svg
