@@ -2,7 +2,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
-import { link } from "fs";
 
 export function Projects() {
   const featuredProjects = [
@@ -37,14 +36,6 @@ export function Projects() {
   ];
 
   const otherProjects = [
-    {
-      title: "Microservices Weather Dashboard",
-      description: "Enterprise-grade weather forecasting app with microservices architecture. Containerized Python/React services with Docker, orchestrated via Kubernetes, and deployed to Azure. ML weather prediction models with 92% accuracy. Implemented full DevOps pipeline: monitoring (Prometheus/Grafana), logging, and auto-scaling.",
-      technologies: ["Python", "React", "SQLite", "Docker", "Kubernetes", "Azure", "Prometheus", "Grafana"],
-      link: "https://github.com/breidi28/-microservices-weather-dashboard",
-      linkText: "View Architecture",
-      github: "https://github.com/breidi28/-microservices-weather-dashboard",
-    },
     {
       title: "Jugo - User Engagement Analysis",
       description: "Web analytics project analyzing 250K+ user sessions to evaluate platform redesign. Discovered 23% increase in user engagement and 15% improvement in conversion rates post-redesign. Built interactive Python dashboards with Dash & Plotly to track KPIs and visualize user behavior patterns. Delivered actionable insights that validated €50K+ redesign investment.",
@@ -119,7 +110,7 @@ export function Projects() {
             {featuredProjects.map((project, index) => (
               <Card 
                 key={project.title} 
-                className="flex flex-col group hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 hover:border-primary/50 cursor-pointer"
+                className="relative flex flex-col group hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 hover:border-primary/50 cursor-pointer"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="absolute -top-3 -right-3 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold shadow-lg">

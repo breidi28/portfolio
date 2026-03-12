@@ -1,4 +1,5 @@
 import { Hero } from "@/components/sections/hero";
+import { CurrentlyBuilding } from "@/components/sections/currently-building";
 import { About } from "@/components/sections/about";
 import { Projects } from "@/components/sections/projects";
 import { Skills } from "@/components/sections/skills";
@@ -12,6 +13,7 @@ export default function Home() {
       <Navigation />
       <main className="container mx-auto px-4 sm:px-6 lg:px-8">
         <Hero />
+        <CurrentlyBuilding />
         <About />
         <Skills />
         <Experience />

@@ -6,7 +6,6 @@ export function Hero() {
   return (
     <section id="hero" className="min-h-[calc(100vh-4rem)] flex items-center justify-center py-20">
       <div className="text-center space-y-8 max-w-3xl">
-        {/* Profile Photo */}
         <div className="flex justify-center mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <div className="relative">
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center border-4 border-primary/20 shadow-xl">
@@ -21,17 +20,20 @@ export function Hero() {
         </div>
 
         <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
+          <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary/80">
+            Data, product thinking, and software execution
+          </p>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
             Hi, I&apos;m <span className="text-primary">Vlad Andrei Bradiceanu</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground font-semibold">
-            Data Analyst & Full-Stack Developer
+          <p className="text-2xl md:text-3xl font-semibold leading-tight text-balance">
+            I build products that turn messy data into clear decisions.
           </p>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            I turn data into action. Combining advanced analytics with software development to build data-driven solutions that solve real business problems. <strong>50% downtime reduction</strong> at DAF Trucks. Production apps serving thousands of users.
+            Data Analyst and Full-Stack Developer with a track record of shipping analytical tools, mobile apps, and automation that create measurable outcomes, including <strong>50% downtime reduction</strong> at DAF Trucks.
           </p>
           <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-            <strong>Looking for:</strong> Data Analyst, Business Intelligence, or Full-Stack Developer roles where I can leverage both analytics and engineering skills.
+            Looking for Data Analyst, BI, or Full-Stack roles where analytics and product execution are both part of the job.
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">

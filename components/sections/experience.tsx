@@ -1,5 +1,4 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 
 export function Experience() {
   const experiences = [
@@ -45,44 +44,59 @@ export function Experience() {
   return (
     <section id="experience" className="py-20">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-bold mb-8 text-center">Work Experience</h2>
-        <div className="space-y-6">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-bold mb-3">Experience</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            A progression from enterprise data work into independent product and analytics delivery.
+          </p>
+        </div>
+        <div className="relative space-y-8 before:absolute before:left-4 before:top-2 before:h-[calc(100%-1rem)] before:w-px before:bg-border md:before:left-1/2 md:before:-translate-x-1/2">
           {experiences.map((exp, index) => (
-            <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:scale-[1.01] border-l-4 border-l-primary/50 hover:border-l-primary">
-              <CardHeader>
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2">
-                  <div>
-                    <CardTitle className="text-xl">
-                      <a 
-                        href={exp.website} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="hover:text-primary transition-colors"
-                      >
-                        {exp.company}
-                      </a>
-                    </CardTitle>
-                    <CardDescription className="text-base font-semibold mt-1">
-                      {exp.position}
-                    </CardDescription>
-                  </div>
-                  <div className="text-sm text-muted-foreground md:text-right">
-                    <div>{exp.period}</div>
-                    <div>{exp.location}</div>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  {exp.highlights.map((highlight, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <span className="text-primary mt-1">•</span>
-                      <span className="text-muted-foreground">{highlight}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+            <div key={index} className="relative md:grid md:grid-cols-[1fr_auto_1fr] md:gap-8 md:items-start">
+              <div className={index % 2 === 0 ? "md:col-start-1" : "md:col-start-3"}>
+                <Card className="ml-10 md:ml-0 border bg-card/80 backdrop-blur hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <CardHeader>
+                    <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+                      <div>
+                        <CardTitle className="text-xl">
+                          <a
+                            href={exp.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-primary transition-colors"
+                          >
+                            {exp.company}
+                          </a>
+                        </CardTitle>
+                        <CardDescription className="text-base font-semibold mt-1 text-foreground/80">
+                          {exp.position}
+                        </CardDescription>
+                      </div>
+                      <div className="text-sm text-muted-foreground md:text-right shrink-0">
+                        <div>{exp.period}</div>
+                        <div>{exp.location}</div>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2">
+                      {exp.highlights.map((highlight, idx) => (
+                        <li key={idx} className="flex items-start gap-3 text-muted-foreground">
+                          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
+                          <span>{highlight}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+              <div className="absolute left-4 top-6 flex h-6 w-6 -translate-x-1/2 items-center justify-center rounded-full border-4 border-background bg-primary shadow md:static md:left-auto md:top-auto md:translate-x-0 md:col-start-2 md:mx-auto">
+                <span className="h-2 w-2 rounded-full bg-primary-foreground" />
+              </div>
+              <div className={index % 2 === 0 ? "hidden md:block md:col-start-3" : "hidden md:block md:col-start-1"}>
+                <div className="h-full" />
+              </div>
+            </div>
           ))}
         </div>
       </div>

@@ -46,6 +46,12 @@ export function Navigation() {
               Experience
             </button>
             <button
+              onClick={() => scrollToSection("building")}
+              className="hover:text-primary transition-colors"
+            >
+              Building
+            </button>
+            <button
               onClick={() => scrollToSection("projects")}
               className="hover:text-primary transition-colors"
             >
@@ -120,6 +126,12 @@ export function Navigation() {
               className="block hover:text-primary transition-colors"
             >
               Experience
+            </button>
+            <button
+              onClick={() => scrollToSection("building")}
+              className="block hover:text-primary transition-colors"
+            >
+              Building
             </button>
             <button
               onClick={() => scrollToSection("projects")}
