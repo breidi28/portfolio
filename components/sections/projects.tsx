@@ -26,33 +26,24 @@ export function Projects() {
       featured: true,
     },
     {
-      title: "Microservices Weather Dashboard",
-      description: "Enterprise-grade weather forecasting app with microservices architecture. Containerized Python/React services with Docker, orchestrated via Kubernetes, and deployed to Azure. ML weather prediction models with 92% accuracy. Implemented full DevOps pipeline: monitoring (Prometheus/Grafana), logging, and auto-scaling. Showcases modern cloud architecture and engineering best practices.",
-      technologies: ["Python", "React", "SQLite", "Docker", "Kubernetes", "Azure", "Prometheus", "Grafana"],
-      link: "https://github.com/breidi28/-microservices-weather-dashboard",
-      linkText: "View Architecture",
-      github: "https://github.com/breidi28/-microservices-weather-dashboard",
+      title: "Music Share - Social Music Platform",
+      description: "Full-stack social music platform with 1,000+ lines of production code. Built comprehensive social network with React Native/Flask featuring OAuth integrations for 6 streaming services (Spotify, YouTube Music, Apple Music, Tidal, Deezer, Qobuz), JWT authentication, physical media cataloging with barcode scanning via MusicBrainz API, and real-time social features (feed, likes, comments, follows). Demonstrates advanced mobile development, backend architecture, and third-party API integrations.",
+      technologies: ["React Native", "TypeScript", "Flask", "SQLAlchemy", "OAuth 2.0", "JWT", "Zustand", "Expo"],
+      link: "https://github.com/breidi28/music-share",
+      linkText: "View on GitHub",
+      github: "https://github.com/breidi28/music-share",
       featured: true,
     },
   ];
 
   const otherProjects = [
     {
-      title: "Train Tracker for Romanian Railways",
-      description: "Production-ready mobile app serving 1,000+ active users. Complete redesign of CFR's outdated system with real-time train tracking, delay notifications, and multi-language support. Built with React Native for cross-platform deployment. Solved a real problem I faced as a frequent traveler—now helping thousands of commuters daily.",
-      technologies: ["React Native", "Node.js", "Python Flask", "Public APIs", "i18n"],
-      link: "https://mytrainbreidi.vercel.app/",
-      linkText: "View Live App",
-      github: "https://github.com/breidi28/train-tracker",
-    },
-    {
-      title: "DAF Trucks NV - Process Optimization",
-      description: "Industrial analytics project that delivered measurable impact: 50% reduction in production downtime, saving €100K+ annually. Analyzed 6 months of manufacturing data, identified bottlenecks, and built Tableau dashboards for real-time monitoring. Presented data-driven recommendations to C-level stakeholders. This project demonstrates my ability to drive business value through analytics.",
-      technologies: ["Python", "Pandas", "R", "Tableau", "Power Apps", "Figma"],
-      link: "https://www.daf.nl/",
-      linkText: "Company Site",
-      github: "#",
-      githubText: "NDA Protected"
+      title: "Microservices Weather Dashboard",
+      description: "Enterprise-grade weather forecasting app with microservices architecture. Containerized Python/React services with Docker, orchestrated via Kubernetes, and deployed to Azure. ML weather prediction models with 92% accuracy. Implemented full DevOps pipeline: monitoring (Prometheus/Grafana), logging, and auto-scaling.",
+      technologies: ["Python", "React", "SQLite", "Docker", "Kubernetes", "Azure", "Prometheus", "Grafana"],
+      link: "https://github.com/breidi28/-microservices-weather-dashboard",
+      linkText: "View Architecture",
+      github: "https://github.com/breidi28/-microservices-weather-dashboard",
     },
     {
       title: "Jugo - User Engagement Analysis",
