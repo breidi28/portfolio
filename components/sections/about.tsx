@@ -10,14 +10,20 @@ export function About() {
           <CardContent className="pt-6">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground">
-                Versatile ICT & Business professional with a dual background in Data Science and Business Strategy. 
-                I excel at translating complex datasets into clear business insights, combining strong analytical ability 
-                with high digital literacy and hands-on technical aptitude across software, hardware, and IT systems.
+                Data & Analytics professional with a unique edge: I don't just analyze problems—I build solutions. 
+                With a foundation in Data Science and Business Strategy, I excel at transforming complex datasets into 
+                actionable insights and production-ready applications that drive real impact.
               </p>
               <p className="text-lg text-muted-foreground">
-                My recent interest in AI solutions and cross-platform development has led me to explore modern frameworks and tools to build impactful applications.
-                I am a rapid self-learner and clear communicator 
-                ready to tackle complex challenges in dynamic environments.
+                My expertise spans the full spectrum from data analysis and machine learning to cross-platform development 
+                with React Native and modern web technologies. This combination allows me to bridge the gap between analytics 
+                and implementation, delivering end-to-end solutions that solve business problems—from dashboard to deployment.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                Whether optimizing industrial processes (50% downtime reduction at DAF Trucks), building mobile applications 
+                for thousands of users, or creating ML-powered recommendation systems, I bring both analytical rigor and 
+                technical execution to every project. I'm a rapid self-learner and clear communicator ready to tackle 
+                complex challenges in dynamic environments.
               </p>
               <Separator />
               <div className="grid md:grid-cols-2 gap-6">
