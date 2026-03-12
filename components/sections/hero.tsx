@@ -16,7 +16,7 @@ export function Hero() {
           I turn data into action. Combining advanced analytics with software development to build data-driven solutions that solve real business problems. <strong>50% downtime reduction</strong> at DAF Trucks. Production apps serving thousands of users.
         </p>
         <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-          🎯 <strong>Looking for:</strong> Data Analyst, Business Intelligence, or Full-Stack Developer roles where I can leverage both analytics and engineering skills.
+          <strong>Looking for:</strong> Data Analyst, Business Intelligence, or Full-Stack Developer roles where I can leverage both analytics and engineering skills.
         </p>
         <div className="flex gap-4 justify-center pt-4">
           <Button size="lg" onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}>
