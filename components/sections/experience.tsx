@@ -91,7 +91,7 @@ export function Experience() {
                     </CardContent>
                   </Card>
               </div>
-              <div className="absolute left-4 top-4 z-10 flex h-6 w-6 -translate-x-1/2 items-center justify-center rounded-full border-4 border-background bg-primary shadow md:left-1/2 md:top-4 md:col-start-2 md:-translate-x-1/2">
+              <div className="absolute left-4 top-4 z-10 flex h-6 w-6 -translate-x-1/2 items-center justify-center rounded-full border-4 border-background bg-primary shadow md:left-0 md:top-4 md:col-start-2 md:translate-x-0 md:justify-self-center">
                 <span className="h-2 w-2 rounded-full bg-primary-foreground" />
               </div>
               <div className={index % 2 === 0 ? "hidden md:block md:col-start-3" : "hidden md:block md:col-start-1"}>
