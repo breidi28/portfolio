@@ -1,5 +1,4 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ScrollReveal } from "@/components/scroll-reveal";
 
 export function Experience() {
   const experiences = [
@@ -56,7 +55,6 @@ export function Experience() {
           {experiences.map((exp, index) => (
             <div key={index} className="relative md:grid md:grid-cols-[1fr_auto_1fr] md:gap-8 md:items-start">
               <div className={index % 2 === 0 ? "md:col-start-1" : "md:col-start-3"}>
-                <ScrollReveal delay={index * 100}>
                   <Card className="surface-card ml-10 rounded-[1.5rem] md:ml-0 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                     <CardHeader>
                       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
@@ -92,7 +90,6 @@ export function Experience() {
                       </ul>
                     </CardContent>
                   </Card>
-                </ScrollReveal>
               </div>
               <div className="absolute left-4 top-6 z-10 flex h-6 w-6 -translate-x-1/2 items-center justify-center rounded-full border-4 border-background bg-primary shadow md:left-1/2 md:top-6 md:col-start-2 md:-translate-x-1/2">
                 <span className="h-2 w-2 rounded-full bg-primary-foreground" />

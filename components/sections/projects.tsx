@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ScrollReveal } from "@/components/scroll-reveal";
 import { ChevronDown, Github } from "lucide-react";
 
 export function Projects() {
@@ -114,8 +113,8 @@ export function Projects() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {featuredProjects.map((project, index) => (
-              <ScrollReveal key={project.title} delay={index * 90} className="h-full">
                 <Card 
+                  key={project.title} 
                   className="surface-card relative flex h-full flex-col rounded-[1.75rem] group hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 hover:border-primary/50 cursor-pointer"
                 >
                   <div className="absolute -top-3 right-5 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold shadow-lg">
@@ -148,7 +147,6 @@ export function Projects() {
                     </div>
                   </CardContent>
                 </Card>
-              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -171,8 +169,8 @@ export function Projects() {
           </div>
           <div className={`${showMoreProjects ? 'grid' : 'hidden'} gap-6 md:grid md:grid-cols-2 lg:grid-cols-3`}>
             {otherProjects.map((project, index) => (
-              <ScrollReveal key={project.title} delay={index * 70} className="h-full">
-                <Card 
+                <Card
+                  key={project.title}
                   className="surface-card h-full rounded-[1.5rem] flex flex-col group hover:shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer"
                 >
                   <CardHeader>
@@ -202,7 +200,6 @@ export function Projects() {
                     </div>
                   </CardContent>
                 </Card>
-              </ScrollReveal>
             ))}
           </div>
         </div>
