@@ -1,9 +1,14 @@
+"use client";
+
+import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Github } from "lucide-react";
+import { ChevronDown, Github } from "lucide-react";
 
 export function Projects() {
+  const [showMoreProjects, setShowMoreProjects] = useState(false);
+
   const featuredProjects = [
     {
       title: "Train Tracker for Romanian Railways",
@@ -152,7 +157,18 @@ export function Projects() {
             <h3 className="font-display text-3xl md:text-4xl mb-3">More Projects</h3>
             <p className="text-muted-foreground">Additional work demonstrating diverse technical capabilities</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="mb-6 flex justify-center md:hidden">
+            <Button
+              type="button"
+              variant="outline"
+              onClick={() => setShowMoreProjects((current) => !current)}
+              className="bg-background/80"
+            >
+              {showMoreProjects ? 'Hide More Projects' : 'Show More Projects'}
+              <ChevronDown className={`transition-transform ${showMoreProjects ? 'rotate-180' : ''}`} />
+            </Button>
+          </div>
+          <div className={`${showMoreProjects ? 'grid' : 'hidden'} gap-6 md:grid md:grid-cols-2 lg:grid-cols-3`}>
             {otherProjects.map((project, index) => (
               <Card 
                 key={project.title} 
