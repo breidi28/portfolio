@@ -6,11 +6,11 @@ export function Hero() {
   return (
     <section id="hero" className="flex min-h-[calc(100vh-6rem)] items-center justify-center py-16 md:py-20">
       <div className="surface-card relative w-full max-w-5xl overflow-hidden rounded-[2rem] px-6 py-12 text-center md:px-10 md:py-16">
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-28 bg-[linear-gradient(180deg,rgba(38,128,129,0.10),transparent)]" />
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-28 bg-[linear-gradient(180deg,rgba(0,0,0,0.04),transparent)] dark:bg-[linear-gradient(180deg,rgba(255,255,255,0.04),transparent)]" />
         <div className="flex justify-center mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <div className="relative">
-            <div className="flex h-32 w-32 items-center justify-center rounded-full border border-primary/20 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.95),rgba(38,128,129,0.12))] shadow-xl md:h-40 md:w-40">
-              <span className="font-display text-5xl md:text-6xl text-primary">VB</span>
+            <div className="flex h-32 w-32 items-center justify-center rounded-full border border-primary/20 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.95),rgba(0,0,0,0.07))] dark:bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.08),rgba(255,255,255,0.02))] shadow-xl md:h-40 md:w-40">
+              <span className="font-display text-5xl md:text-6xl font-bold text-primary">VB</span>
             </div>
             <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-green-500 rounded-full border-4 border-background flex items-center justify-center shadow-lg">
               <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

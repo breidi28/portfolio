@@ -12,7 +12,7 @@ export function CurrentlyBuilding() {
   return (
     <section id="building" className="py-12">
       <div className="mx-auto max-w-5xl">
-        <div className="surface-card overflow-hidden rounded-[2rem] bg-gradient-to-br from-primary/10 via-background to-accent/30">
+        <div className="surface-card overflow-hidden rounded-[2rem] bg-gradient-to-br from-muted/70 via-background to-background dark:from-muted/40">
           <div className="grid gap-8 px-6 py-8 md:grid-cols-[1.2fr_0.8fr] md:px-8 md:py-10">
             <div className="space-y-5">
               <div className="flex items-center gap-3">
@@ -53,7 +53,7 @@ export function CurrentlyBuilding() {
                 </Button>
               </div>
             </div>
-            <div className="rounded-[1.5rem] border border-border/80 bg-card/80 p-6 backdrop-blur-sm shadow-[0_16px_40px_-28px_rgba(34,52,86,0.45)]">
+            <div className="rounded-[1.5rem] border border-border/80 bg-card/80 p-6 backdrop-blur-sm shadow-sm">
               <p className="text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
                 Current Focus
               </p>
