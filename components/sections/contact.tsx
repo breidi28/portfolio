@@ -1,6 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ScrollReveal } from "@/components/scroll-reveal";
 
 export function Contact() {
   return (
@@ -10,8 +9,7 @@ export function Contact() {
           <p className="section-kicker mb-3">Contact</p>
           <h2 className="section-title">Get In Touch</h2>
         </div>
-        <ScrollReveal>
-          <Card className="surface-card rounded-[2rem]">
+        <Card className="surface-card rounded-[2rem]">
             <CardHeader>
               <CardTitle className="font-display text-3xl">Let&apos;s Work Together</CardTitle>
               <CardDescription className="text-base">
@@ -129,7 +127,6 @@ export function Contact() {
               </div>
             </CardContent>
           </Card>
-        </ScrollReveal>
       </div>
     </section>
   );

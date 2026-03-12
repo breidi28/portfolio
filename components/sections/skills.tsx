@@ -1,6 +1,5 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ScrollReveal } from "@/components/scroll-reveal";
 
 export function Skills() {
   const skillCategories = [
@@ -39,8 +38,8 @@ export function Skills() {
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
-            <ScrollReveal key={category.title} delay={index * 70} className="h-full">
-              <Card 
+            <Card
+              key={category.title} 
                 className="surface-card h-full rounded-[1.5rem] hover:shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer hover:border-primary/30"
               >
                 <CardHeader>
@@ -59,7 +58,6 @@ export function Skills() {
                   </div>
                 </CardContent>
               </Card>
-            </ScrollReveal>
           ))}
         </div>
       </div>

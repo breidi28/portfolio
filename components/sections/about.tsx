@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { ScrollReveal } from "@/components/scroll-reveal";
 
 export function About() {
   return (
@@ -10,8 +9,7 @@ export function About() {
           <p className="section-kicker mb-3">Profile</p>
           <h2 className="section-title">About Me</h2>
         </div>
-        <ScrollReveal>
-          <Card className="surface-card rounded-[2rem] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <Card className="surface-card rounded-[2rem] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
             <CardContent className="pt-6">
               <div className="space-y-6">
                 <p className="section-copy">
@@ -59,7 +57,6 @@ export function About() {
               </div>
             </CardContent>
           </Card>
-        </ScrollReveal>
       </div>
     </section>
   );

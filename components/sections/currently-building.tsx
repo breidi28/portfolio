@@ -1,6 +1,5 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ScrollReveal } from "@/components/scroll-reveal";
 
 export function CurrentlyBuilding() {
   const focusAreas = [
@@ -13,8 +12,7 @@ export function CurrentlyBuilding() {
   return (
     <section id="building" className="py-12">
       <div className="mx-auto max-w-5xl">
-        <ScrollReveal>
-          <div className="surface-card overflow-hidden rounded-[2rem] bg-gradient-to-br from-muted/70 via-background to-background dark:from-muted/40">
+        <div className="surface-card overflow-hidden rounded-[2rem] bg-gradient-to-br from-muted/70 via-background to-background dark:from-muted/40">
             <div className="grid gap-8 px-6 py-8 md:grid-cols-[1.2fr_0.8fr] md:px-8 md:py-10">
               <div className="space-y-5">
                 <div className="flex items-center gap-3">
@@ -55,8 +53,7 @@ export function CurrentlyBuilding() {
                   </Button>
                 </div>
               </div>
-              <ScrollReveal delay={120}>
-                <div className="rounded-[1.5rem] border border-border/80 bg-card/80 p-6 backdrop-blur-sm shadow-sm">
+              <div className="rounded-[1.5rem] border border-border/80 bg-card/80 p-6 backdrop-blur-sm shadow-sm">
                   <p className="text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
                     Current Focus
                   </p>
@@ -75,10 +72,9 @@ export function CurrentlyBuilding() {
                     </p>
                   </div>
                 </div>
-              </ScrollReveal>
+              </div>
             </div>
           </div>
-        </ScrollReveal>
       </div>
     </section>
   );
