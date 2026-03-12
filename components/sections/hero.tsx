@@ -23,7 +23,7 @@ export function Hero() {
         <div className="animate-in space-y-4 fade-in slide-in-from-bottom-4 duration-700 delay-150">
           <p className="section-kicker">Romania-based • Data Analyst & Full-Stack Developer</p>
           <h1 className="font-display text-4xl leading-[0.95] tracking-tight md:text-7xl text-balance">
-            Building analytical products with the polish of a real brand.
+            Glad to meet you!
           </h1>
           <p className="mx-auto max-w-2xl text-base text-foreground/80 md:text-xl md:leading-8">
             I&apos;m Vlad Andrei Bradiceanu, a data analyst and full-stack developer who translates messy systems into tools people actually want to use.
