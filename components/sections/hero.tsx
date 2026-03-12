@@ -20,17 +20,11 @@ export function Hero() {
         </div>
 
         <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
-          <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary/80">
-            Data, product thinking, and software execution
-          </p>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
             Hi, I&apos;m <span className="text-primary">Vlad Andrei Bradiceanu</span>
           </h1>
           <p className="text-2xl md:text-3xl font-semibold leading-tight text-balance">
             I build products that turn messy data into clear decisions.
-          </p>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Data Analyst and Full-Stack Developer with a track record of shipping analytical tools, mobile apps, and automation that create measurable outcomes, including <strong>50% downtime reduction</strong> at DAF Trucks.
           </p>
           <p className="text-base text-muted-foreground max-w-2xl mx-auto">
             Looking for Data Analyst, BI, or Full-Stack roles where analytics and product execution are both part of the job.
