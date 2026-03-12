@@ -197,4 +197,69 @@
   .surface-card {
     @apply border border-border/80 bg-card/80 backdrop-blur-xl shadow-sm;
   }
+
+  .scroll-reveal {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translate3d(0, 28px, 0) scale(0.985);
+    transition-property: opacity, transform, filter;
+    transition-duration: 900ms;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform, filter;
+  }
+
+  .scroll-reveal[data-visible="true"] {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  .scroll-reveal[data-delay="70"] {
+    transition-delay: 70ms;
+  }
+
+  .scroll-reveal[data-delay="90"] {
+    transition-delay: 90ms;
+  }
+
+  .scroll-reveal[data-delay="100"] {
+    transition-delay: 100ms;
+  }
+
+  .scroll-reveal[data-delay="120"] {
+    transition-delay: 120ms;
+  }
+
+  .scroll-reveal[data-delay="140"] {
+    transition-delay: 140ms;
+  }
+
+  .scroll-reveal[data-delay="180"] {
+    transition-delay: 180ms;
+  }
+
+  .scroll-reveal[data-delay="200"] {
+    transition-delay: 200ms;
+  }
+
+  .scroll-reveal[data-delay="210"] {
+    transition-delay: 210ms;
+  }
+
+  .scroll-reveal[data-delay="280"] {
+    transition-delay: 280ms;
+  }
+
+  .scroll-reveal[data-delay="350"] {
+    transition-delay: 350ms;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .scroll-reveal {
+      opacity: 1;
+      filter: none;
+      transform: none;
+      transition: none;
+    }
+  }
 }

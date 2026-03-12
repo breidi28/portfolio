@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ScrollReveal } from "@/components/scroll-reveal";
 
 export function Skills() {
   const skillCategories = [
@@ -38,27 +39,27 @@ export function Skills() {
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
-            <Card 
-              key={category.title} 
-              className="surface-card rounded-[1.5rem] hover:shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer hover:border-primary/30"
-              style={{ animationDelay: `${index * 50}ms` }}
-            >
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 font-display text-2xl">
-                  <span className="w-2 h-2 rounded-full bg-primary"></span>
-                  {category.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill) => (
-                    <Badge key={skill} variant="secondary" className="hover:bg-primary hover:text-primary-foreground transition-colors">
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+            <ScrollReveal key={category.title} delay={index * 70} className="h-full">
+              <Card 
+                className="surface-card h-full rounded-[1.5rem] hover:shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer hover:border-primary/30"
+              >
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 font-display text-2xl">
+                    <span className="w-2 h-2 rounded-full bg-primary"></span>
+                    {category.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {category.skills.map((skill) => (
+                      <Badge key={skill} variant="secondary" className="hover:bg-primary hover:text-primary-foreground transition-colors">
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </ScrollReveal>
           ))}
         </div>
       </div>

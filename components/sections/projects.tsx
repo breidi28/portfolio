@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { ChevronDown, Github } from "lucide-react";
 
 export function Projects() {
@@ -113,41 +114,41 @@ export function Projects() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {featuredProjects.map((project, index) => (
-              <Card 
-                key={project.title} 
-                className="surface-card relative flex flex-col rounded-[1.75rem] group hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 hover:border-primary/50 cursor-pointer"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="absolute -top-3 right-5 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold shadow-lg">
-                  Featured
-                </div>
-                <CardHeader>
-                  <CardTitle className="font-display text-2xl group-hover:text-primary transition-colors">{project.title}</CardTitle>
-                  <CardDescription>{project.description}</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-1 flex flex-col justify-between">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="outline" className="group-hover:border-primary/50 transition-colors">
-                        {tech}
-                      </Badge>
-                    ))}
+              <ScrollReveal key={project.title} delay={index * 90} className="h-full">
+                <Card 
+                  className="surface-card relative flex h-full flex-col rounded-[1.75rem] group hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 hover:border-primary/50 cursor-pointer"
+                >
+                  <div className="absolute -top-3 right-5 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                    Featured
                   </div>
-                  <div className="flex gap-2">
-                    <Button variant="default" size="sm" className="flex-1" asChild>
-                      <a href={project.link} target="_blank" rel="noopener noreferrer">
-                        {project.linkText || "Live Demo"}
-                      </a>
-                    </Button>
-                    <Button variant="outline" size="sm" className="flex-1" asChild>
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        <Github className="mr-2 h-4 w-4" />
-                        {project.githubText || "GitHub"}
-                      </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+                  <CardHeader>
+                    <CardTitle className="font-display text-2xl group-hover:text-primary transition-colors">{project.title}</CardTitle>
+                    <CardDescription>{project.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent className="flex-1 flex flex-col justify-between">
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.technologies.map((tech) => (
+                        <Badge key={tech} variant="outline" className="group-hover:border-primary/50 transition-colors">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                    <div className="flex gap-2">
+                      <Button variant="default" size="sm" className="flex-1" asChild>
+                        <a href={project.link} target="_blank" rel="noopener noreferrer">
+                          {project.linkText || "Live Demo"}
+                        </a>
+                      </Button>
+                      <Button variant="outline" size="sm" className="flex-1" asChild>
+                        <a href={project.github} target="_blank" rel="noopener noreferrer">
+                          <Github className="mr-2 h-4 w-4" />
+                          {project.githubText || "GitHub"}
+                        </a>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -170,38 +171,38 @@ export function Projects() {
           </div>
           <div className={`${showMoreProjects ? 'grid' : 'hidden'} gap-6 md:grid md:grid-cols-2 lg:grid-cols-3`}>
             {otherProjects.map((project, index) => (
-              <Card 
-                key={project.title} 
-                className="surface-card rounded-[1.5rem] flex flex-col group hover:shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <CardHeader>
-                  <CardTitle className="font-display text-2xl group-hover:text-primary transition-colors">{project.title}</CardTitle>
-                  <CardDescription>{project.description}</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-1 flex flex-col justify-between">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="outline">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                  <div className="flex gap-2">
-                    <Button variant="default" size="sm" className="flex-1" asChild>
-                      <a href={project.link} target="_blank" rel="noopener noreferrer">
-                        {project.linkText || "Live Demo"}
-                      </a>
-                    </Button>
-                    <Button variant="outline" size="sm" className="flex-1" asChild>
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        <Github className="mr-2 h-4 w-4" />
-                        {project.githubText || "GitHub"}
-                      </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+              <ScrollReveal key={project.title} delay={index * 70} className="h-full">
+                <Card 
+                  className="surface-card h-full rounded-[1.5rem] flex flex-col group hover:shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer"
+                >
+                  <CardHeader>
+                    <CardTitle className="font-display text-2xl group-hover:text-primary transition-colors">{project.title}</CardTitle>
+                    <CardDescription>{project.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent className="flex-1 flex flex-col justify-between">
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.technologies.map((tech) => (
+                        <Badge key={tech} variant="outline">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                    <div className="flex gap-2">
+                      <Button variant="default" size="sm" className="flex-1" asChild>
+                        <a href={project.link} target="_blank" rel="noopener noreferrer">
+                          {project.linkText || "Live Demo"}
+                        </a>
+                      </Button>
+                      <Button variant="outline" size="sm" className="flex-1" asChild>
+                        <a href={project.github} target="_blank" rel="noopener noreferrer">
+                          <Github className="mr-2 h-4 w-4" />
+                          {project.githubText || "GitHub"}
+                        </a>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </ScrollReveal>
             ))}
           </div>
         </div>
