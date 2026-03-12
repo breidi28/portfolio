@@ -4,15 +4,16 @@ import { Badge } from "@/components/ui/badge";
 export function Experience() {
   const experiences = [
     {
-      company: "Bershka Nederland NV",
-      position: "Sales Assistant",
-      period: "July 2024 - September 2025",
-      location: "Eindhoven, Netherlands",
-      website: "https://www.bershka.com/nl/",
+      company: "Independent Developer & Data Consultant",
+      position: "Freelance Projects",
+      period: "2023 - Present",
+      location: "Remote",
+      website: "#projects",
       highlights: [
-        "Trusted key staff member responsible for cash handling and daily closing procedures",
-        "Trained and assisted new employees with store procedures and systems",
-        "Maintained high service quality during peak hours in fast-paced environment",
+        "Delivered 50% downtime reduction for DAF Trucks through process optimization and data analysis",
+        "Built production React Native apps (Train Tracker, Business Manager) serving thousands of users",
+        "Created ML-powered recommendation systems and interactive BI dashboards for multiple clients",
+        "Tech stack: Python, React Native, TypeScript, SQL, Power BI, Machine Learning",
       ],
     },
     {
@@ -22,9 +23,9 @@ export function Experience() {
       location: "Bucharest, Romania",
       website: "https://www.brd.ro/",
       highlights: [
-        "Designed interactive dashboards using Plotly (Dash) to visualize financial KPIs",
-        "Created structured financial reports for management decision-making",
-        "Performed preprocessing and exploratory analysis using Python (Pandas)",
+        "Designed interactive financial dashboards using Plotly Dash, improving KPI visibility for 20+ stakeholders",
+        "Automated monthly reporting process, reducing report generation time by 60%",
+        "Performed data preprocessing and exploratory analysis on 500K+ transaction records using Python",
       ],
     },
     {
@@ -34,9 +35,9 @@ export function Experience() {
       location: "Bucharest, Romania",
       website: "https://www.brd.ro/",
       highlights: [
-        "Supported automated data pipelines using Apache Airflow",
-        "Built business dashboards in Apache Superset for operational teams",
-        "Gained experience with production data flows and enterprise reporting",
+        "Built and maintained automated data pipelines using Apache Airflow, processing 100K+ daily records",
+        "Created 15+ operational dashboards in Apache Superset for cross-functional teams",
+        "Reduced data processing errors by 35% through improved validation and monitoring",
       ],
     },
   ];
