@@ -202,10 +202,13 @@
     opacity: 0;
     filter: blur(8px);
     transform: translate3d(0, 28px, 0) scale(0.985);
+    will-change: opacity, transform, filter;
+  }
+
+  .scroll-reveal[data-ready="true"] {
     transition-property: opacity, transform, filter;
     transition-duration: 900ms;
     transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-    will-change: opacity, transform, filter;
   }
 
   .scroll-reveal[data-visible="true"] {
