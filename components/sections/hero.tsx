@@ -4,12 +4,13 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section id="hero" className="min-h-[calc(100vh-4rem)] flex items-center justify-center py-20">
-      <div className="text-center space-y-8 max-w-3xl">
+    <section id="hero" className="flex min-h-[calc(100vh-6rem)] items-center justify-center py-16 md:py-20">
+      <div className="surface-card relative w-full max-w-5xl overflow-hidden rounded-[2rem] px-6 py-12 text-center md:px-10 md:py-16">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-28 bg-[linear-gradient(180deg,rgba(38,128,129,0.10),transparent)]" />
         <div className="flex justify-center mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <div className="relative">
-            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center border-4 border-primary/20 shadow-xl">
-              <span className="text-5xl md:text-6xl font-bold text-primary">VB</span>
+            <div className="flex h-32 w-32 items-center justify-center rounded-full border border-primary/20 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.95),rgba(38,128,129,0.12))] shadow-xl md:h-40 md:w-40">
+              <span className="font-display text-5xl md:text-6xl text-primary">VB</span>
             </div>
             <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-green-500 rounded-full border-4 border-background flex items-center justify-center shadow-lg">
               <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -20,21 +21,27 @@ export function Hero() {
         </div>
 
         <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-            Hi, I&apos;m <span className="text-primary">Vlad Andrei Bradiceanu</span>
+          <p className="section-kicker">Romania-based, available for modern product teams</p>
+          <h1 className="font-display text-5xl leading-[0.95] tracking-tight md:text-7xl text-balance">
+            Building analytical products with the polish of a real brand.
           </h1>
-          <p className="text-2xl md:text-3xl font-semibold leading-tight text-balance">
-            I build products that turn messy data into clear decisions.
+          <p className="mx-auto max-w-2xl text-lg text-foreground/80 md:text-xl md:leading-8">
+            I&apos;m Vlad Andrei Bradiceanu, a data analyst and full-stack developer who translates messy systems into tools people actually want to use.
           </p>
           <p className="text-base text-muted-foreground max-w-2xl mx-auto">
-            Looking for Data Analyst, BI, or Full-Stack roles where analytics and product execution are both part of the job.
+            Looking for Data Analyst, BI, or Full-Stack roles where analytics, product thinking, and software execution all matter.
           </p>
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-2 text-sm text-muted-foreground">
+            <span className="rounded-full border border-border/80 bg-background/70 px-4 py-2">50% downtime reduction delivered</span>
+            <span className="rounded-full border border-border/80 bg-background/70 px-4 py-2">React Native + Python products shipped</span>
+            <span className="rounded-full border border-border/80 bg-background/70 px-4 py-2">Data, BI, ML, and product engineering</span>
+          </div>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
-          <Button size="lg" onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })} className="transition-all hover:scale-105">
+          <Button size="lg" onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })} className="transition-all hover:scale-105 shadow-sm">
             View My Work
           </Button>
-          <Button size="lg" variant="outline" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })} className="transition-all hover:scale-105">
+          <Button size="lg" variant="outline" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })} className="transition-all hover:scale-105 bg-background/60">
             Get In Touch
           </Button>
           <Button size="lg" variant="secondary" asChild className="transition-all hover:scale-105">

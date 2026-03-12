@@ -3,12 +3,15 @@ import { Button } from "@/components/ui/button";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-20 bg-muted/50">
+    <section id="contact" className="py-20">
       <div className="max-w-2xl mx-auto">
-        <h2 className="text-4xl font-bold mb-8 text-center">Get In Touch</h2>
-        <Card>
+        <div className="mb-8 text-center">
+          <p className="section-kicker mb-3">Contact</p>
+          <h2 className="section-title">Get In Touch</h2>
+        </div>
+        <Card className="surface-card rounded-[2rem]">
           <CardHeader>
-            <CardTitle className="text-2xl">Let&apos;s Work Together</CardTitle>
+            <CardTitle className="font-display text-3xl">Let&apos;s Work Together</CardTitle>
             <CardDescription className="text-base">
               I&apos;m actively seeking Data Analyst, Business Intelligence, or Full-Stack Developer opportunities. 
               Open to discussing exciting projects and career opportunities.

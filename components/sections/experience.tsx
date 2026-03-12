@@ -9,7 +9,7 @@ export function Experience() {
       location: "Remote",
       website: "#projects",
       highlights: [
-        "Delivered 50% downtime reduction for DAF Trucks through process optimization and data analysis",
+        "Continuously delivering data-driven solutions and mobile applications for clients across various industries",
         "Built production React Native apps (Train Tracker, Business Manager) serving thousands of users",
         "Created ML-powered recommendation systems and interactive BI dashboards for multiple clients",
         "Tech stack: Python, React Native, TypeScript, SQL, Power BI, Machine Learning",
@@ -45,7 +45,8 @@ export function Experience() {
     <section id="experience" className="py-20">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold mb-3">Experience</h2>
+          <p className="section-kicker mb-3">Track Record</p>
+          <h2 className="section-title mb-3">Experience</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             A progression from enterprise data work into independent product and analytics delivery.
           </p>
@@ -54,11 +55,11 @@ export function Experience() {
           {experiences.map((exp, index) => (
             <div key={index} className="relative md:grid md:grid-cols-[1fr_auto_1fr] md:gap-8 md:items-start">
               <div className={index % 2 === 0 ? "md:col-start-1" : "md:col-start-3"}>
-                <Card className="ml-10 md:ml-0 border bg-card/80 backdrop-blur hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <Card className="surface-card ml-10 rounded-[1.5rem] md:ml-0 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                   <CardHeader>
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
                       <div>
-                        <CardTitle className="text-xl">
+                        <CardTitle className="font-display text-2xl">
                           <a
                             href={exp.website}
                             target="_blank"

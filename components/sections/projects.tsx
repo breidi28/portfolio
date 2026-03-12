@@ -100,24 +100,24 @@ export function Projects() {
   return (
     <section id="projects" className="py-20">
       <div className="max-w-6xl mx-auto">
-        {/* Featured Projects */}
         <div className="mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-4xl font-bold mb-3">Featured Projects</h2>
+            <p className="section-kicker mb-3">Selected Work</p>
+            <h2 className="section-title mb-3">Featured Projects</h2>
             <p className="text-muted-foreground">Highlights of my most impactful work</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {featuredProjects.map((project, index) => (
               <Card 
                 key={project.title} 
-                className="relative flex flex-col group hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 hover:border-primary/50 cursor-pointer"
+                className="surface-card relative flex flex-col rounded-[1.75rem] group hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 hover:border-primary/50 cursor-pointer"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="absolute -top-3 -right-3 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                <div className="absolute -top-3 right-5 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                   Featured
                 </div>
                 <CardHeader>
-                  <CardTitle className="group-hover:text-primary transition-colors">{project.title}</CardTitle>
+                  <CardTitle className="font-display text-2xl group-hover:text-primary transition-colors">{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1 flex flex-col justify-between">
@@ -147,21 +147,20 @@ export function Projects() {
           </div>
         </div>
 
-        {/* Other Projects */}
         <div>
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold mb-3">More Projects</h3>
+            <h3 className="font-display text-3xl md:text-4xl mb-3">More Projects</h3>
             <p className="text-muted-foreground">Additional work demonstrating diverse technical capabilities</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {otherProjects.map((project, index) => (
               <Card 
                 key={project.title} 
-                className="flex flex-col group hover:shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer"
+                className="surface-card rounded-[1.5rem] flex flex-col group hover:shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardHeader>
-                  <CardTitle className="group-hover:text-primary transition-colors">{project.title}</CardTitle>
+                  <CardTitle className="font-display text-2xl group-hover:text-primary transition-colors">{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1 flex flex-col justify-between">
