@@ -1,4 +1,5 @@
 import { Hero } from "@/components/sections/hero";
+import { RecruiterFit } from "@/components/sections/recruiter-fit";
 import { CurrentlyBuilding } from "@/components/sections/currently-building";
 import { About } from "@/components/sections/about";
 import { Projects } from "@/components/sections/projects";
@@ -13,6 +14,7 @@ export default function Home() {
       <Navigation />
       <main className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <Hero />
+        <RecruiterFit />
         <CurrentlyBuilding />
         <About />
         <Skills />

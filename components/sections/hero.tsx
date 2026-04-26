@@ -14,13 +14,18 @@ export function Hero() {
           <p className="mx-auto max-w-2xl text-base text-foreground/80 md:text-xl md:leading-8">
             I&apos;m Vlad Andrei Bradiceanu. I build analytics systems and practical software that help teams make faster, better decisions.
           </p>
+          <p className="mx-auto max-w-3xl text-sm text-muted-foreground md:text-base">
+            Open to Data and AI roles in Bucharest or remote. Fastest response on Email or Phone.
+          </p>
         </div>
         <div className="flex flex-col justify-center gap-4 pt-8 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300 sm:flex-row">
           <Button size="lg" onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })} className="transition-all hover:scale-105 shadow-sm">
             View Case Studies
           </Button>
-          <Button size="lg" variant="outline" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })} className="transition-all hover:scale-105 bg-background/60">
-            Contact Me
+          <Button size="lg" variant="outline" asChild className="transition-all hover:scale-105 bg-background/60">
+            <a href="https://linkedin.com/in/vladbradiceanu" target="_blank" rel="noopener noreferrer">
+              Message on LinkedIn
+            </a>
           </Button>
         </div>
       </div>

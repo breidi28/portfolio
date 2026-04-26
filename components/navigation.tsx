@@ -35,6 +35,12 @@ export function Navigation() {
                 Home
               </button>
               <button
+                onClick={() => scrollToSection("recruiters")}
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Recruiters
+              </button>
+              <button
                 onClick={() => scrollToSection("about")}
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
@@ -114,6 +120,12 @@ export function Navigation() {
               className="block text-muted-foreground hover:text-foreground transition-colors"
             >
               Home
+            </button>
+            <button
+              onClick={() => scrollToSection("recruiters")}
+              className="block text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Recruiters
             </button>
             <button
               onClick={() => scrollToSection("about")}

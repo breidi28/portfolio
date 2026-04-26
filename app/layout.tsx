@@ -14,8 +14,57 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://vladbradiceanu.vercel.app"),
   title: "Vlad Andrei Bradiceanu | Data and AI Engineer",
   description: "Data and AI Engineer delivering measurable operational impact: 50% downtime reduction and EUR100K+ annual savings. Strong in Python, SQL, BI, machine learning, and production software delivery.",
+  keywords: [
+    "Vlad Bradiceanu",
+    "Data Engineer",
+    "Data Analyst",
+    "AI Engineer",
+    "Machine Learning",
+    "Python",
+    "Business Intelligence",
+    "Portfolio",
+  ],
+  openGraph: {
+    title: "Vlad Andrei Bradiceanu | Data and AI Engineer",
+    description:
+      "Data and AI Engineer delivering measurable operational impact: 50% downtime reduction and EUR100K+ annual savings.",
+    url: "https://vladbradiceanu.vercel.app",
+    siteName: "Vlad Bradiceanu Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vlad Andrei Bradiceanu | Data and AI Engineer",
+    description:
+      "Data and AI Engineer focused on measurable operational impact, analytics, and production software delivery.",
+  },
+};
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Vlad Andrei Bradiceanu",
+  url: "https://vladbradiceanu.vercel.app",
+  jobTitle: "Data and AI Engineer",
+  email: "mailto:vladbradiceanuandrei@gmail.com",
+  telephone: "+40733193397",
+  sameAs: [
+    "https://linkedin.com/in/vladbradiceanu",
+    "https://github.com/breidi28",
+  ],
+  worksFor: {
+    "@type": "Organization",
+    name: "Huawei Global Service Center Romania",
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Bucharest",
+    addressCountry: "Romania",
+  },
 };
 
 export default function RootLayout({
@@ -34,6 +83,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+          />
           {children}
         </ThemeProvider>
       </body>
