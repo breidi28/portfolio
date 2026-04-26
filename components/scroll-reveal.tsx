@@ -11,8 +11,10 @@ type ScrollRevealProps = {
 
 export function ScrollReveal({ children, delay = 0, className }: ScrollRevealProps) {
   const elementRef = useRef<HTMLDivElement | null>(null);
-  const [isVisible, setIsVisible] = useState(false);
-  const [isReady, setIsReady] = useState(false);
+  const prefersReducedMotion =
+    typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const [isVisible, setIsVisible] = useState(prefersReducedMotion);
+  const [isReady, setIsReady] = useState(prefersReducedMotion);
 
   useEffect(() => {
     const element = elementRef.current;
@@ -24,8 +26,6 @@ export function ScrollReveal({ children, delay = 0, className }: ScrollRevealPro
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
     if (mediaQuery.matches) {
-      setIsReady(true);
-      setIsVisible(true);
       return;
     }
 

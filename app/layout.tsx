@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vlad Andrei Bradiceanu | Data Analyst & Full-Stack Developer",
-  description: "Data Analyst & Full-Stack Developer with proven track record in analytics and software development. 50% downtime reduction at DAF Trucks. Building production apps serving thousands of users. Expertise in Python, React Native, BI, and Machine Learning.",
+  title: "Vlad Andrei Bradiceanu | Data and AI Engineer",
+  description: "Data and AI Engineer delivering measurable operational impact: 50% downtime reduction and EUR100K+ annual savings. Strong in Python, SQL, BI, machine learning, and production software delivery.",
 };
 
 export default function RootLayout({

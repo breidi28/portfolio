@@ -13,20 +13,16 @@ export function About() {
             <CardContent className="pt-6">
               <div className="space-y-6">
                 <p className="section-copy">
-                  Data & Analytics professional with a unique edge: I don't just analyze problems—I build solutions. 
-                  With a foundation in Data Science and Business Strategy, I excel at transforming complex datasets into 
-                  actionable insights and production-ready applications that drive real impact.
+                  I work at the intersection of data, AI, and software delivery. My edge is simple: I do not stop at analysis.
+                  I translate business pain points into systems teams can use daily, from dashboards and models to production tools.
                 </p>
                 <p className="section-copy">
-                  My expertise spans the full spectrum from data analysis and machine learning to cross-platform development 
-                  with React Native and modern web technologies. This combination allows me to bridge the gap between analytics 
-                  and implementation, delivering end-to-end solutions that solve business problems—from dashboard to deployment.
+                  My work spans Python analytics, machine learning workflows, BI reporting, and full-stack implementation with
+                  React Native and modern web technologies. That combination helps me bridge the gap between insight and execution.
                 </p>
                 <p className="section-copy">
-                  Whether optimizing industrial processes (50% downtime reduction at DAF Trucks), building mobile applications 
-                  for thousands of users, or creating ML-powered recommendation systems, I bring both analytical rigor and 
-                  technical execution to every project. I'm a rapid self-learner and clear communicator ready to tackle 
-                  complex challenges in dynamic environments.
+                  Results include a 50% production downtime reduction at DAF Trucks, EUR100K+ annual savings, and shipped
+                  applications used by real users. I bring analytical rigor, execution speed, and clear communication to each project.
                 </p>
                 <Separator />
                 <div className="grid md:grid-cols-2 gap-6">
@@ -44,13 +40,12 @@ export function About() {
                   <div>
                     <h3 className="font-display text-2xl mb-3">Strengths</h3>
                     <ul>
-                      <li className="text-muted-foreground">• Strong analytical and problem-solving skills</li>
-                      <li className="text-muted-foreground">• Proficient in Python, R, SQL, and BI tools</li>
-                      <li className="text-muted-foreground">• Strong foundation in software development and system design</li>
-                      <li className="text-muted-foreground">• Experience with data visualization and dashboarding</li>
-                      <li className="text-muted-foreground">• Excellent communication and stakeholder management</li>
-                      <li className="text-muted-foreground">• Rapid self-learner and adaptable to new technologies</li>
-                      <li className="text-muted-foreground">• Experience delivering results in Scrum and Agile environments</li>
+                      <li className="text-muted-foreground">• End-to-end delivery from data extraction to production deployment</li>
+                      <li className="text-muted-foreground">• Strong stack in Python, SQL, BI, and applied machine learning</li>
+                      <li className="text-muted-foreground">• Product mindset focused on adoption, usability, and business outcomes</li>
+                      <li className="text-muted-foreground">• Clear communication with technical teams and executive stakeholders</li>
+                      <li className="text-muted-foreground">• Fast learner with high ownership in ambiguous environments</li>
+                      <li className="text-muted-foreground">• Comfortable in Agile teams and cross-functional collaboration</li>
                     </ul>
                   </div>
                 </div>

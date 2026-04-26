@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 
 export function CurrentlyBuilding() {
   const focusAreas = [
-    "Social graph and feeds",
-    "OAuth music integrations",
-    "Collection management",
-    "Mobile UX refinement",
+    "Social feed and recommendation logic",
+    "OAuth integrations across music platforms",
+    "Collection management with barcode flows",
+    "Mobile UX performance and retention loops",
   ];
 
   return (
@@ -26,11 +26,12 @@ export function CurrentlyBuilding() {
                   Music Share
                 </h2>
                 <p className="section-copy">
-                  A social music platform where users share tracks, follow each other, and manage physical media collections in one mobile product.
+                  A social music product where users share tracks, follow friends, and manage physical media collections in one mobile app.
                 </p>
               </div>
               <p className="max-w-2xl text-sm leading-7 text-muted-foreground">
-                Built with React Native, Expo, TypeScript, and Flask. It combines social posting, comments, likes, authentication, barcode-powered collection tracking, and streaming-service integrations into one app that feels closer to a real product than a portfolio demo.
+                Built with React Native, Expo, TypeScript, and Flask. The platform combines social posting, comments, likes,
+                authentication, barcode-powered tracking, and third-party streaming integrations in one production-style system.
               </p>
               <div className="flex flex-wrap gap-2">
                 <Badge variant="secondary" className="bg-background/70">React Native</Badge>
@@ -68,7 +69,8 @@ export function CurrentlyBuilding() {
               <div className="mt-6 rounded-2xl bg-muted/60 p-4">
                 <p className="text-sm font-medium text-foreground">Why it matters</p>
                 <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                  This is the kind of project that shows product sense, mobile engineering, backend design, and third-party integrations in the same build.
+                  This project demonstrates product sense, mobile engineering, backend architecture, and integration strategy
+                  in a single end-to-end build.
                 </p>
               </div>
             </div>

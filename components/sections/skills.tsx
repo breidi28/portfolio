@@ -4,28 +4,28 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export function Skills() {
   const skillCategories = [
     {
-      title: "Data & Analytics",
-      skills: ["Python", "Pandas", "SQL", "Machine Learning", "R", "NumPy" ],
+      title: "Data & AI",
+      skills: ["Python", "SQL", "Machine Learning", "Deep Learning", "R", "NumPy", "Pandas"],
     },
     {
       title: "BI & Visualization",
-      skills: ["Power BI", "Plotly", "Dash", "Matplotlib", "Tableau", "Google Looker Studio" ],
+      skills: ["Power BI", "Plotly", "Dash", "Matplotlib", "Tableau", "Looker Studio"],
     },
     {
       title: "Web & Mobile Development",
-      skills: ["React", "JavaScript", "HTML", "Flask", "React Native", "TypeScript", "Node.js"],
+      skills: ["React", "React Native", "TypeScript", "JavaScript", "Flask", "FastAPI", "Next.js"],
     },
     {
       title: "Tools & Platforms",
-      skills: ["Figma", "Git", "Scrum", "Agile", "Apache Airflow", "Apache Superset", "Windows/Linux"],
+      skills: ["Figma", "Git", "Docker", "Kubernetes", "Azure", "Airflow", "Superset", "GitLab CI/CD"],
     },
     {
-      title: "AI & Machine Learning",
-      skills: ["Modelling", "NLP", "Scikit-learn", "Feature Engineering", "Model Evaluation", "Data Preprocessing"],
+      title: "Modeling & Delivery",
+      skills: ["NLP", "Scikit-learn", "Feature Engineering", "Model Evaluation", "Data Preprocessing", "API Integration"],
     },
     {
-      title: "Certifications",
-      skills: ["Google Project Management", "Risk Management (NYIF)", "Meta Marketing Analytics", "ECDL Advanced"],
+      title: "Communication & Workflow",
+      skills: ["Stakeholder Communication", "Cross-Team Collaboration", "Analytical Thinking", "Agile", "Scrum", "Documentation"],
     },
   ];
 
@@ -37,7 +37,7 @@ export function Skills() {
           <h2 className="section-title">Skills & Technologies</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
-          {skillCategories.map((category, index) => (
+          {skillCategories.map((category) => (
             <Card
               key={category.title} 
                 className="surface-card h-full rounded-[1.5rem] hover:shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer hover:border-primary/30"

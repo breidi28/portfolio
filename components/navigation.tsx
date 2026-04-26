@@ -23,7 +23,7 @@ export function Navigation() {
               </div>
               <div className="leading-none">
                 <div className="font-display text-lg">Vlad Bradiceanu</div>
-                <div className="mt-1 text-[11px] uppercase tracking-[0.24em] text-muted-foreground">Data x Product x Code</div>
+                <div className="mt-1 text-[11px] uppercase tracking-[0.24em] text-muted-foreground">Data and AI Engineer</div>
               </div>
             </div>
 

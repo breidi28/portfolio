@@ -11,10 +11,10 @@ export function Contact() {
         </div>
         <Card className="surface-card rounded-[2rem]">
             <CardHeader>
-              <CardTitle className="font-display text-3xl">Let&apos;s Work Together</CardTitle>
+              <CardTitle className="font-display text-3xl">Open to Data and AI Roles</CardTitle>
               <CardDescription className="text-base">
-                I&apos;m actively seeking Data Analyst, Business Intelligence, or Full-Stack Developer opportunities. 
-                Open to discussing exciting projects and career opportunities.
+                I&apos;m open to Data Analyst, BI, Data Science, and Data/AI Engineer opportunities.
+                If you are hiring for measurable impact, I would be glad to connect.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -28,11 +28,11 @@ export function Contact() {
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="flex-1" asChild>
-                  <a href="#" download>
+                  <a href="mailto:vladbradiceanuandrei@gmail.com?subject=CV%20Request%20-%20Vlad%20Bradiceanu">
                     <svg className="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
-                    Download Resume
+                    Request CV
                   </a>
                 </Button>
               </div>
@@ -122,7 +122,7 @@ export function Contact() {
             </div>
             <div className="pt-4">
               <Button className="w-full" size="lg" asChild>
-                <a href="mailto:vladbradiceanuandrei@gmail.com">Send Me an Email</a>
+                <a href="mailto:vladbradiceanuandrei@gmail.com?subject=Interview%20Opportunity">Book a conversation</a>
               </Button>
               </div>
             </CardContent>

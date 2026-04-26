@@ -3,40 +3,52 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 export function Experience() {
   const experiences = [
     {
-      company: "Independent Developer & Data Consultant",
-      position: "Freelance Projects",
-      period: "2023 - Present",
-      location: "Remote",
-      website: "#projects",
+      company: "Huawei Global Service Center Romania",
+      position: "Front Office Software Engineer",
+      period: "Mar 2026 - Present",
+      location: "Bucharest, Romania",
+      website: "https://www.huawei.com/",
       highlights: [
-        "Continuously delivering data-driven solutions and mobile applications for clients across various industries",
-        "Built production React Native apps (Train Tracker, Business Manager) serving thousands of users",
-        "Created ML-powered recommendation systems and interactive BI dashboards for multiple clients",
-        "Tech stack: Python, React Native, TypeScript, SQL, Power BI, Machine Learning",
+        "Delivered L1 network operations in a 24/7 monitoring environment with incident triage and first-line restoration.",
+        "Managed end-to-end ticket lifecycle and cross-team escalation aligned with SLA targets.",
+        "Built and deployed an internal software suite on Vercel with PostgreSQL to centralize workflows.",
+        "Developed JavaScript automation scripts to reduce repetitive operational tasks and improve team efficiency.",
+      ],
+    },
+    {
+      company: "Interschutz",
+      position: "Data Science Intern",
+      period: "Jan 2023 - Aug 2023",
+      location: "Bucharest, Romania",
+      website: "#",
+      highlights: [
+        "Performed statistical analysis on financial data and translated findings into business recommendations.",
+        "Created stakeholder-facing visual reports to communicate trends, risks, and opportunities.",
+        "Presented weekly updates to senior stakeholders and supported budget planning discussions.",
       ],
     },
     {
       company: "BRD - Groupe Société Générale",
       position: "Data Science Intern",
-      period: "June 2023 - August 2023",
+      period: "Jun 2023 - Aug 2023",
       location: "Bucharest, Romania",
       website: "https://www.brd.ro/",
       highlights: [
-        "Designed interactive financial dashboards using Plotly Dash, improving KPI visibility for 20+ stakeholders",
-        "Automated monthly reporting process, reducing report generation time by 60%",
-        "Performed data preprocessing and exploratory analysis on 500K+ transaction records using Python",
+        "Designed and developed interactive financial dashboards with Plotly Dash for KPI tracking.",
+        "Created structured reports that converted raw data into decision-ready insights.",
+        "Collaborated with analysts to improve dashboard usability for executive audiences.",
       ],
     },
     {
       company: "BRD - Groupe Société Générale",
       position: "Data Engineering Intern",
-      period: "June 2022 - August 2022",
+      period: "Jun 2022 - Aug 2022",
       location: "Bucharest, Romania",
       website: "https://www.brd.ro/",
       highlights: [
-        "Built and maintained automated data pipelines using Apache Airflow, processing 100K+ daily records",
-        "Created 15+ operational dashboards in Apache Superset for cross-functional teams",
-        "Reduced data processing errors by 35% through improved validation and monitoring",
+        "Supported development and monitoring of automated data pipelines using Apache Airflow.",
+        "Built and maintained business dashboards in Apache Superset for reporting teams.",
+        "Collaborated with BI engineers and analysts in an enterprise banking environment.",
       ],
     },
   ];
@@ -48,7 +60,7 @@ export function Experience() {
           <p className="section-kicker mb-3">Track Record</p>
           <h2 className="section-title mb-3">Experience</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A progression from enterprise data work into independent product and analytics delivery.
+            From enterprise analytics to production software delivery across telecom, finance, and operations.
           </p>
         </div>
         <div className="relative space-y-8 before:absolute before:left-4 before:top-2 before:h-[calc(100%-1rem)] before:w-px before:bg-border md:before:left-1/2 md:before:-translate-x-1/2">
